@@ -1,0 +1,60 @@
+.top-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 2vh 0;
+}
+
+.nav {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+.lists {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.purchase-btn {
+  display: block;
+  margin: 20px auto; 
+}
+
+
+.user-nickname,
+.logout,
+.login,
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+  margin: 0 10px;
+}
+
+.user-nickname {
+  font-weight: bold;
+}
+
+.paint-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 10px auto; 
+  background-color: #3ccace;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white; 
+  transition: background-color 0.3s; 
+}
+
+.paint-btn:hover {
+  background-color: #299a98; 
+}
+
+
