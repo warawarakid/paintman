@@ -9,7 +9,15 @@
   </div>
 
   
-  <%# render 'shared/error_messages', model: f.object %>
+  <% if resource.errors.any? %>
+  <div class="login-flash-message error-alert">
+    <ul>
+      <% resource.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
   
 
   <div class="form-group">
