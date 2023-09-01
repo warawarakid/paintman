@@ -1,43 +1,67 @@
+# アプリケーション名
 
-# テーブル設計
+paintman
 
-## Users テーブル
+## アプリケーション概要
 
-| Column             | Type   | Options                   |
-| ------------------ | ------ |-------------------------- |
-| nickname           | string | null: false               |
-| encrypted_password | string | null: false               |
+塗料の持ち出し履歴を管理できる。
+管理者の在庫管理業務の効率化・削減が期待できる。
 
-### Association
+## URL
 
-- has_many :items
-- has_many :orders
+https://paintman.onrender.com
+
+## テスト用アカウント
+
+Basic認証ID：admin
+Basic認証パスワード：2222
+メールアドレス：
+パスワード
+
+## 利用方法
+
+### 塗料投稿機能
+
+1.トップページのヘッダーからユーザー新規登録を行う
+2.新規持ち出しボタンから、塗料の入力し投稿する
+
+### 履歴詳細機能
+
+1.トップページの履歴一覧ボタンから、履歴一覧を確認する
+2.修正箇所があれば、編集ボタンから修正する。
+
+## アプリケーションを作成した背景
+
+現在働いている職場では、作業者が塗料を倉庫から持ち出す際、紙の記録表を10枚（10職場）あるうちの
+1枚を探し、そこに30色以上の塗料リストにチェックを打っています。
+管理者は月末にその記録表を回収し棚卸しをしています。
+作業者の紙に記載する手間と管理者の記録表の準備や集計の手間を考えた結果、
+このアプリケーションを作成することにより、その作業の効率化と改善が見込めると
+期待し、作成しました。
+
+## 洗い出した要件
+
+https://docs.google.com/spreadsheets/d/1ibaYnGpvvM9GcuKYr_U0WJ0oydtA1SKrwBUtnNbsAuY/edit#gid=982722306
+
+## 実装した機能についての画像やGIFおよびその説明
 
 
-## Items テーブル
+## 実装予定の機能
 
-| Column             | Type      | Options                        |
-| ------------------ | --------- |------------------------------- |
-| color_id           | integer   | null: false                    |
-| user               | references | null: false, foreign_key: true |
+## データベース設計
 
-### Association
+[![Image from Gyazo](https://i.gyazo.com/e39a497b9bdaae9dff14749a091f5cf0.png)](https://gyazo.com/e39a497b9bdaae9dff14749a091f5cf0)
 
-- belongs_to :user
-- belongs_to_active_hash :color
-- has_one :histories
+## 画面遷移図
+
+[![Image from Gyazo](https://i.gyazo.com/9561d8c385a5977ef18e76f3eb230ff3.png)](https://gyazo.com/9561d8c385a5977ef18e76f3eb230ff3)
+
+## 開発環境
+
+## ローカルでの動作方法
+
+## 工夫したポイント
 
 
-## Histories テーブル
-
-| Column     | Type        | Options                        |
-|------------|-------------|------------------------------- |
-| user       | references  | null: false, foreign_key: true |
-| item       | references  | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- belongs_to :item
 
 
