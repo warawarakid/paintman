@@ -1,0 +1,28 @@
+<div class="history-contents">
+
+  <div class="history-main">
+    <h2 class="history-title">塗料持ち出し履歴</h2>
+
+    <table class="history-table">
+      <thead>
+        <tr>
+          <th>持ち出し日</th>
+          <th>標準色</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @items.each do |item| %>
+        <tr>
+          <td><%= item.created_at.strftime('%Y-%m-%d') %></td>
+          <td><%= item.color.name %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <div class="back-btn-contents">
+      <%= link_to 'トップページに戻る', root_path, class: "back-btn" %>
+    </div>
+  </div>
+
+</div>

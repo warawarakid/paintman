@@ -19,6 +19,10 @@ class ItemsController < ApplicationController
     end
   end
 
+  def show
+    @history = @item.history
+  end
+
   private
 
   def item_params
