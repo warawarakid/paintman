@@ -1,0 +1,38 @@
+<div class="items-sell-contents">
+
+  <div class="items-sell-main">
+    <h2 class="items-sell-title">塗料の情報を入力</h2>
+
+
+    <%= form_with model: @item, local: true do |f| %>
+
+
+    <%= render 'devise/shared/error_messages', resource: @item %>
+
+
+    <%# 持ち出した塗料の入力 %>
+    <div class="items-paint">
+      <div class="weight-bold-text">塗料</div>
+      <div class="form">
+        <div class="weight-bold-text">
+          標準色
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:color_id, Color.all, :id, :name, {}, {class:"select-box", id:"item-color"}) %>
+        
+      </div>
+    </div>
+    <%# /商品の詳細 %>
+
+    <%# 下部ボタン %>
+    <div class="sell-btn-contents">
+
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+      <%= f.submit "保存する" ,class:"sell-btn" %>
+      
+    </div>
+    <%# /下部ボタン %>
+  </div>
+  <% end %>
+
+</div>

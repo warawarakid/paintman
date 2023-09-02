@@ -8,16 +8,7 @@
     </h1>
   </div>
 
-  
-  <% if resource.errors.any? %>
-  <div class="login-flash-message error-alert">
-    <ul>
-      <% resource.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  </div>
-  <% end %>
+  <%= render 'devise/shared/error_messages', model: f.object %>
   
 
   <div class="form-group">

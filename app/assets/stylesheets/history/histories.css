@@ -1,0 +1,59 @@
+.history-contents {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.history-main {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.history-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* テーブルスタイリング */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.history-table th, .history-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.history-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.history-table tbody tr:hover {
+  background-color: #f6f6f6;
+}
+
+/* ボタンスタイリング */
+.back-btn-contents {
+  text-align: center;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #45a049;
+}
