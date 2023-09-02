@@ -26,13 +26,15 @@ font-size: 30px;
 /* タブレット表示時 */
 @media (max-width: 1000px) {
  p {
-   font-size: 100px;
+  width: 800px;
+  font-size: 18px;
  }
 }
 
 /* スマホ表示時 */
-@media (max-width: 600px) {
-  body {
-      font-size: 18px;  // 通常より大きなフォントサイズ
-  }
+@media (max-width: 500px) {
+ p {
+  width: 300px;
+  font-size: 10px;
+ }
 }
