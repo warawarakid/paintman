@@ -13,7 +13,6 @@ RSpec.describe Item, type: :model do
     end
 
     context '商品が保存できない場合' do
-
       it 'color_idが未選択では登録できない' do
         @item.color_id = 1
         @item.valid?

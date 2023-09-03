@@ -10,6 +10,4 @@ class HistoriesController < ApplicationController
   def history_params
     params.require(:history).permit(:color_id).merge(user_id: current_user.id, item_id: params[:item_id])
   end
-
-
 end
