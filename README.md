@@ -14,8 +14,11 @@ https://paintman.onrender.com
 ## テスト用アカウント
 
 Basic認証ID：admin
+
 Basic認証パスワード：2222
+
 メールアドレス：
+
 パスワード
 
 ## 利用方法
@@ -58,9 +61,25 @@ https://docs.google.com/spreadsheets/d/1ibaYnGpvvM9GcuKYr_U0WJ0oydtA1SKrwBUtnNbs
 
 ## 開発環境
 
+Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/haml&Scss
+
 ## ローカルでの動作方法
+
+以下のコマンドを順に実行。
+% git clone https://github.com/warawarakid/paintman
+
+% cd paintman
+
+% bundle install
+
+% yarn install
 
 ## 工夫したポイント
 
-
-
+スマートホンやタブレットに対応したCSSの作成
+このオリジナルアプリは将来的に実用化を目指して作成しています。
+作業者はPCに触れることが基本ないため、スマートホン対応で製作することが必須でした。
+今回学習したカリキュラムには、スマホ対応の内容は学んでいないため、自分で調べ実装しました。
+ただ、実用化するにはまだまだ見た目の部分での修正が多く、機能としても不十分であるのが現状です。
+今後継続して、シンナーや廃棄塗料などを記録管理できる機能の追加、見た目の修正を行い、
+実用化に向けて取り組んでいます。
