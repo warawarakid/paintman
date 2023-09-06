@@ -61,7 +61,7 @@ https://docs.google.com/spreadsheets/d/1ibaYnGpvvM9GcuKYr_U0WJ0oydtA1SKrwBUtnNbs
 
 ## 開発環境
 
-Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/haml&Scss
+Ruby/Ruby on Rails/MySQL/Github/Visual Studio Code/HTML＆CSS
 
 ## ローカルでの動作方法
 
