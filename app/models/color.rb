@@ -11,7 +11,7 @@ class Color < ActiveHash::Base
     { id: 9, name: 'HSCブルー' },
     { id: 10, name: 'プライマー' },
     { id: 11, name: 'サビコート' },
-    { id: 12, name: '' },
+    { id: 12, name: '硬化剤3k' },
     { id: 14, name: '' },
     { id: 15, name: '' },
     { id: 16, name: '' },
